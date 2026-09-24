@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main(){
+    int balance;
+    printf("enter the balance:");
+    scanf("%d",&balance);
+    if (balance < 500)
+    {
+    printf("low balance");
+    }
+    else if (balance >=500 && balance <=2000)
+    {
+        printf("sufficient balance");
+    }
+    else
+    {
+        printf("premium balance");
+    }
+}
+
