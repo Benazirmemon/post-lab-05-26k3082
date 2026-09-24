@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main()
+{
+    int restaurantOpen, itemAvailable, balanceSufficient;
+
+    printf("Enter restaurantOpen (1=Yes, 0=No): ");
+    scanf("%d", &restaurantOpen);
+
+    if (restaurantOpen == 1)
+    {
+        printf("Enter itemAvailable (1=Yes, 0=No): ");
+        scanf("%d", &itemAvailable);
+
+        if (itemAvailable == 1)
+        {
+            printf("Enter balanceSufficient (1=Yes, 0=No): ");
+            scanf("%d", &balanceSufficient);
+
+            if (balanceSufficient == 1)
+            {
+                printf("Order placed successfully.");
+            }
+            else
+            {
+                printf("Insufficient balance.");
+            }
+        }
+        else
+        {
+            printf("Item is not available.");
+        }
+    }
+    else
+    {
+        printf("Restaurant is closed.");
+    }
+return 0;
+    
+}
