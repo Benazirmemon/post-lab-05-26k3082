@@ -1,0 +1,71 @@
+#include<stdio.h>
+int main(){
+    int operation;
+    int account;
+    printf("enter the operation:");
+    scanf("%d",&operation);
+    printf("enter the account:");
+    scanf("%d",&account);
+    switch(operation)
+    {
+        case 1:
+        printf("operation:balance inquiry");
+        switch(account)
+        {
+            case 1:
+            printf("accounttype:saving account");
+            break;
+            case 2:
+            printf("accounttype:current account");
+            break;
+            default:
+            printf("invalid account");
+        }
+        break;
+        case 2:
+        printf("operation:cash withdrawal");
+        switch(account)
+        {
+            case 1:
+            printf("accounttype:saving account");
+            break;
+            case 2:
+            printf("accounttype:current account");
+            break;
+            default:
+            printf("invalid account");
+        }
+        break;
+         case 3:
+        printf("operation:cash deposit");
+        switch(account)
+        {
+            case 1:
+            printf("accounttype:saving account");
+            break;
+            case 2:
+            printf("accounttype:current account");
+            break;
+            default:
+            printf("invalid account");
+        }
+        break;
+        case 4:
+        printf("operation:PIN changes");
+        switch(account)
+        {
+            case 1:
+            printf("accounttype:saving account");
+            break;
+            case 2:
+            printf("accounttype:current account");
+            break;
+            default:
+            printf("invalid account");
+        }
+        break;
+        default:
+        printf("invalid operation");
+    }
+    }
+    
